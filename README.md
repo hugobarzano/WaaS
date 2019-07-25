@@ -1,2 +1,2 @@
 # WaaS
-Web Apps and Services: Cloud Generator system  
+Web as a Service: Cloud Generator system  
