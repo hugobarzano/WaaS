@@ -57,6 +57,7 @@ var routesV1 = Routes {
 	},
 }
 
+
 // NewRouter configures a new router to the API
 func NewRouter() *mux.Router {
 	router := mux.NewRouter().StrictSlash(true)
@@ -81,6 +82,7 @@ func NewRouter() *mux.Router {
 			Name(route.Name).
 			Handler(handler)
 	}
+
 	return router
 }
 

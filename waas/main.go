@@ -24,5 +24,6 @@ func main() {
 	allowedOrigins := handlers.AllowedOrigins([]string{"*"})
 	allowedMethods := handlers.AllowedMethods([]string{"GET", "POST", "DELETE", "PUT"})
 	fmt.Println("WaaS Listening on ::"+port)
+	router.HandleFunc("/waas",controller.CommunityWebSocket)
 	log.Fatal(http.ListenAndServe(":" + port, handlers.CORS(allowedOrigins, allowedMethods)(router)))
 }
